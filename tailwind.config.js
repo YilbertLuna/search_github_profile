@@ -18,6 +18,10 @@ module.exports = {
       width: {
         '98': '34rem',
       }
+    },
+    fontFamily: {
+      Title: ["Merriweather", "serif"],
+      content: ["Heebo", "sans-serif"],
     }
   },
   plugins: [],
