@@ -14,6 +14,9 @@ module.exports = {
         'primary': '#b1d4e0',
         'secondary': '#145da0',
         'tertiary': '#56aeff'
+      },
+      width: {
+        '98': '34rem',
       }
     }
   },
