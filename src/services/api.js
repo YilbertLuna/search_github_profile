@@ -4,8 +4,6 @@ export async function getDataIndoUsera(user) {
     try {
         const res = await fetch(`${API_URL}/${user}`)
         const data = await res.json()
-        console.log(res.status)
-        console.log(data)
         if(res.status === 200) return data
         // return data
     } catch (error) {
