@@ -30,12 +30,12 @@ export default function Home() {
   return (
     <main>
       <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-row mt-28 justify-center items-center">
+        <div className="flex flex-row mt-20 justify-center items-center">
           <input className="p-2 rounded-lg w-64 focus:outline-none" onChange={getValueInput} type="text" value={targetValue} placeholder="Ingrese el usuario de github"/>
           <button onClick={handleUserInput} className="p-2 bg-tertiary rounded-lg focus:outline-none">buscar 🔍</button>
         </div>
 
-        <div className={`${!userProfile ? 'hidden' : ''} w-11/12 md:w-2/3 lg:w-2/4 mt-11 bg-secondary rounded-xl p-8`}>
+        <div className={`${!userProfile ? 'hidden' : ''} w-11/12 sm:w-4/5 md:w-98 mt-11 bg-tertiary rounded-xl p-8`}>
           {viewUsers()}
         </div>
       </div>
