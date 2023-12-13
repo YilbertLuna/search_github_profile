@@ -15,6 +15,9 @@ module.exports = {
         'secondary': '#145da0',
         'tertiary': '#56aeff'
       },
+      screens:{
+        s: '440px'
+      },
       width: {
         '98': '34rem',
       }
@@ -22,7 +25,7 @@ module.exports = {
     fontFamily: {
       Title: ["Merriweather", "serif"],
       content: ["Heebo", "sans-serif"],
-    }
+    },
   },
   plugins: [],
 }

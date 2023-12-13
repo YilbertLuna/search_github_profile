@@ -1,4 +1,7 @@
 import Image from "next/image"
+import { IoLocationSharp } from "react-icons/io5";
+import { FaLink } from "react-icons/fa6";
+
 
 export function UserData(data) {
     return(
@@ -18,17 +21,16 @@ export function UserData(data) {
             </div>
 
             <div className="flex flex-col justify-center items-center">
-                <div className="flex flex-col space-y-9 justify-center items items-center mt-4 bg-secondary p-3 rounded-lg w-full sm:w-3/4">
-                    <p className="flex flex-row space-x-10 w-80 text-center font-Title">
+                <div className="flex flex-col space-y-9 justify-center items items-center mt-4 bg-secondary p-3 rounded-lg w-48 s:w-full sm:w-3/4">
+                    <p className="flex flex-col s:flex-row s:space-x-10 w-80 text-center font-Title">
                         <span>Repos: {data.data.public_repos}</span>
                         <span>Followers: {data.data.followers}</span>
                         <span>Following: {data.data.following}</span>
                     </p>
-
                 </div>
                 <p className="flex flex-col justify-center sm:flex-row sm:space-x-10 text-center justifay-center mt-10 font-content text-base">
-                    <span className={`${!data.data.location ? 'text-gray-500' : ''}`}>📍 {data.data.location ? data.data.location : 'Not Available'}</span>
-                    <a href={data.data.blog}><span className={`${!data.data.blog ? 'text-gray-500' : ''}`}>📎 {data.data.blog ? data.data.blog : 'Not Available'}</span></a>
+                    <span className={`${!data.data.location ? 'text-gray-500' : ''} flex flex-row items-center gap-3`}><IoLocationSharp /> {data.data.location ? data.data.location : 'Not Available'}</span>
+                    <a href={data.data.blog}><span className={`${!data.data.blog ? 'text-gray-500' : ''} flex flex-row items-center gap-3`}><FaLink /> {data.data.blog ? data.data.blog : 'Not Available'}</span></a>
                 </p>
             </div>
         </div>
